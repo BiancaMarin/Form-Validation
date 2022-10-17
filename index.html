@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Validation</title>
+    <link rel="stylesheet" href="styles/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.css"
+    />
+    <script defer src="scripts/main.js"></script>
+  </head>
+  <body>
+    <section>
+      <h1 class="title">Register Form</h1>
+      <form class="formular" data-form action="/" method="GET">
+        <div>
+          <label for="firstName">First Name</label>
+          <input
+            type="text"
+            id="firstName"
+            name="firstName"
+            placeholder="Hilary"
+          />
+          <p data-error-message-firstName></p>
+        </div>
+        <div>
+          <label for="lastName">Last Name</label>
+          <input
+            type="text"
+            id="lastName"
+            name="lastName"
+            placeholder="Benedict"
+          />
+          <p data-error-message-lastName></p>
+        </div>
+        <div>
+          <label for="email">E-mail</label>
+          <input
+            type="text"
+            id="email"
+            name="email"
+            placeholder="hilary@example.com"
+          />
+          <p data-error-message-email></p>
+        </div>
+        <div>
+          <label for="phone">Phone</label>
+          <input
+            type="text"
+            id="phone"
+            name="phone"
+            placeholder="0800 400 300"
+          />
+          <p data-error-message-phone></p>
+        </div>
+        <div>
+          <label for="password">Password</label>
+          <input data-password type="password" id="password" name="password" />
+          <p data-error-message-password></p>
+          <p class="pass-check" data-check>8 characters</p>
+          <p class="pass-check" data-check>1 lower case character</p>
+          <p class="pass-check" data-check>1 upper case character</p>
+        </div>
+        <div>
+          <label for="repeatPassword">Repeat Password</label>
+          <input type="password" id="repeatPassword" name="retype" />
+          <p data-error-message-retype></p>
+        </div>
+        <div>
+          <label for="birth">Birth Date</label>
+          <input data-birth type="date" id="birth" name="birth" />
+          <p data-error-message-birth></p>
+          <p data-error-message-age></p>
+        </div>
+
+        <div>
+          <label for="url">Image Url</label>
+          <input
+            data-url
+            type="text"
+            id="url"
+            name="url
+          "
+          />
+          <p data-error-message-url></p>
+        </div>
+        <div>
+          <label for="region">Region</label>
+          <select name="region" id="region">
+            <option value="">Select a region</option>
+          </select>
+          <p data-error-message-region></p>
+        </div>
+        <div>
+          <label for="country">Country</label>
+          <select name="country" id="country" data-country>
+            <option value="">Select a country</option>
+          </select>
+          <p data-error-message-country></p>
+        </div>
+        <div class="gender">
+          <p class="paragraph">Gender</p>
+          <section class="gender-check">
+            <label for="female">F</label>
+            <input
+              data-female
+              type="radio"
+              value="F"
+              id="female"
+              name="gender"
+            />
+            <label for="male">M</label>
+            <input data-male type="radio" value="F" id="male" name="gender" />
+          </section>
+          <section class="gender-error">
+            <p data-error-message-gender></p>
+          </section>
+        </div>
+
+        <div class="terms">
+          <div class="terms-check">
+            <input type="checkbox" id="terms" name="terms" />
+            <label for="terms">Accept terms and conditions</label>
+          </div>
+          <div class="terms-error">
+            <p data-error-message-terms></p>
+          </div>
+        </div>
+
+        <div class="btn">
+          <button data-btn type="submit">Submit</button>
+        </div>
+      </form>
+    </section>
+  </body>
+</html>

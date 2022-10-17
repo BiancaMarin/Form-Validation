@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Hurricane&family=Poppins:wght@300;400;700;800&family=Roboto&family=Shadows+Into+Light&display=swap');
+
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  color: #222831;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url('https://images.unsplash.com/photo-1516705486637-7b01bf9b9d13?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1046&q=80');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+body .title {
+  font-size: 1.5rem;
+  font-weight: 400;
+  letter-spacing: 1px;
+  text-align: center;
+}
+
+.formular {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  gap: 0.8rem;
+  border-radius: 10px;
+  background-color: #fff;
+  box-shadow: 0px 2px 20px 0 #4c0033;
+  opacity: 0.8;
+  padding: 1rem 0;
+}
+
+.formular div {
+  display: flex;
+  flex-direction: column;
+}
+
+.formular label {
+  font-weight: 600;
+  font-size: 0.7rem;
+  margin: 0 1rem;
+}
+
+.formular input {
+  width: 15rem;
+  border-radius: 8px;
+  border: 1px solid #9d9d9d;
+  margin: 0 1rem;
+}
+
+.formular input::placeholder {
+  font-style: italic;
+}
+
+.formular select {
+  width: 15rem;
+  height: 1rem;
+  border-radius: 8px;
+  border: 1px solid #9d9d9d;
+  margin: 0 1rem;
+}
+.formular .gender .gender-check {
+  display: flex;
+  flex-direction: row;
+}
+
+.formular .gender .gender-check input {
+  width: 10px;
+  margin: 0 0 0 1rem;
+}
+
+.formular .paragraph {
+  font-weight: 600;
+  font-size: 0.7rem;
+  margin-top: 0.5rem;
+  margin: 0 0 0 1rem;
+}
+
+.terms {
+  display: flex;
+  flex-direction: row;
+}
+
+.terms .terms-check {
+  display: flex;
+  flex-direction: row;
+}
+
+.formular .terms input {
+  justify-self: flex-start;
+  align-self: flex-start;
+  width: 20px;
+  height: 20px;
+  border: 1px solid #9d9d9d;
+  margin-right: 0.5rem;
+}
+
+.formular .btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.formular .btn button {
+  width: 90%;
+  height: 1.5rem;
+  border-radius: 8px;
+  border: none;
+  background-color: #4c0033;
+  color: #fff;
+  font-weight: 400;
+  cursor: pointer;
+}
+
+.formular .btn button:hover {
+  background-color: transparent;
+  color: #222831;
+  border: 1px solid #222831;
+  cursor: pointer;
+  transition: 0.5s ease-in-out;
+  transform: scale(0.9);
+}
+
+.error {
+  color: red;
+  font-weight: 400;
+  font-size: 0.7rem;
+  margin: 0;
+  padding-left: 1rem;
+}
+
+.pass-check {
+  font-size: 0.7rem;
+  margin: 0 1rem;
+}
+
+@media screen and (min-width: 768px) and (max-width: 997px) {
+  body .title {
+    font-size: 2rem;
+  }
+
+  .formular {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    align-items: start;
+    gap: 0.5rem;
+    padding: 1rem;
+  }
+
+  .formular .btn {
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+
+  .formular .btn button {
+    width: 95%;
+    height: 2rem;
+  }
+}
+
+@media screen and (min-width: 998px) {
+  body .title {
+    font-size: 3rem;
+  }
+
+  .formular {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    align-items: start;
+    gap: 1rem;
+    padding: 1rem;
+  }
+
+  .formular label {
+    font-size: 1rem;
+  }
+
+  .formular input {
+    height: 20px;
+  }
+
+  .formular select {
+    height: 20px;
+  }
+
+  .formular .paragraph {
+    font-size: 1rem;
+  }
+
+  .formular .btn {
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+
+  .formular .btn button {
+    width: 95%;
+    height: 2rem;
+  }
+
+  .error {
+    font-size: 0.9rem;
+  }
+}
