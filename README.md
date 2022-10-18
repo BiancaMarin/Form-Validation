@@ -25,6 +25,4 @@ $ npm run json:server
 
 ## Illustration
 
----
-
 ![Responsive](images/Responsive.png)
