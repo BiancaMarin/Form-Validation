@@ -21,6 +21,8 @@ $ npm run json:server
 3. Make sure that the options from dropdown are selected;
 4. The age of the user must be over 18.
 
+Errors are displayed with the red color in order to help the user to complete correctly the register form.
+
 ## Illustration
 
 ![Responsive](images/Responsive.png)
