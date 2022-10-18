@@ -22,3 +22,9 @@ $ npm run json:server
 2. Make sure that the radio and check buttons are checked;
 3. Make sure that the options from dropdown are selected;
 4. The age of the user must be over 18.
+
+## Illustration
+
+---
+
+![Responsive](images/Responsive.png)
