@@ -6,6 +6,8 @@ $ git clone: https://github.com/BiancaMarin/form-validation.git
 
 $ npm install
 
+$ npm i json-server
+
 $ npm run json:server
 
 ### Regex patterns:
